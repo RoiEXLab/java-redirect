@@ -1,18 +1,19 @@
 {
   "manifest_version": 2,
+
   "name": "Java-Redirector",
-  "version": "1.2",
-
+  "version": "2.0",
   "description": "Redirects your Browser to the newest version of the javadocs",
-
   "icons": {
     "48": "icons/java-redirect-48.png"
   },
 
-  "content_scripts": [
-    {
-      "matches": ["*://docs.oracle.com/javase/*/docs/*"],
-      "js": ["java-redirect.js"]
-    }
-  ]
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://docs.oracle.com/javase/*/docs/*"
+  ],
+  "background": {
+    "scripts": ["java-redirect.js"]
+  }
 }
