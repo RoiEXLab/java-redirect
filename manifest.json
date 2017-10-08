@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Java-Redirector",
-  "version": "2.1",
+  "version": "2.2",
   "description": "Redirects your Browser to the newest version of the javadocs",
   "icons": {
     "48": "icons/java-redirect-48.png"

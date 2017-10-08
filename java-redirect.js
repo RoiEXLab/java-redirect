@@ -6,7 +6,7 @@ function redirectJava(details){
 		const request = new XMLHttpRequest();
 		request.open('HEAD', redirectionTarget, false);
 		request.send(null);
-		if(request.status === 200){
+		if(request.status === 200 && request.responseURL === redirectionTarget){
 		  return {redirectUrl: redirectionTarget};
 		}
 	}
