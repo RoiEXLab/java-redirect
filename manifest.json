@@ -2,7 +2,7 @@
   "manifest_version": 2,
 
   "name": "Java-Redirector",
-  "version": "2.3",
+  "version": "3.0",
   "description": "Redirects your Browser to the newest version of the javadocs",
   "icons": {
     "48": "icons/java-redirect-48.png"
@@ -11,9 +11,19 @@
   "permissions": [
     "webRequest",
     "webRequestBlocking",
-    "*://docs.oracle.com/*"
+    "*://docs.oracle.com/*",
+    "storage"
   ],
   "background": {
     "scripts": ["java-redirect.js"]
+  },
+  "options_ui": {
+    "page": "settings.html",
+    "browser_style": true
+  },
+  "applications": {
+    "gecko": {
+      "id": "{b75af37b-574d-4746-ac34-629fa349cf81}"
+    }
   }
 }
