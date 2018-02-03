@@ -14,7 +14,7 @@ browser.storage.sync.get().then(result => {
 			const request = new XMLHttpRequest();
 			request.open('HEAD', redirectionTarget, false);
 			request.send(null);
-			if(request.status === 200 && request.responseURL === redirectionTarget){
+			if(request.status === 200 && redirectionTarget.startsWith(request.responseURL)){
 			  return {redirectUrl: redirectionTarget};
 			}
 		}
