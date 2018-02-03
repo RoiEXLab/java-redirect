@@ -19,5 +19,5 @@ browser.storage.sync.get().then(result => {
 			}
 		}
 		return {};
-	}, {urls: ["*://docs.oracle.com/*"]}, ["blocking"]);
+	}, {urls: ["*://docs.oracle.com/*"], types: ["main_frame", "sub_frame"]}, ["blocking"]);
 });
