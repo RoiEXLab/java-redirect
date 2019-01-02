@@ -9,16 +9,23 @@ const getReplaceAlgorithm = version => {
 	}
 };
 
-browser.webRequest.onBeforeRequest.addListener(async details => {
-	const result = await browser.storage.sync.get();
-	const replaceUrl = getReplaceAlgorithm(result['java-version']);
-	const redirectionTarget = replaceUrl(details.url);
+browser.webRequest.onBeforeRequest.addListener(
+	async details => {
+		const result = await browser.storage.sync.get();
+		const replaceUrl = getReplaceAlgorithm(result['java-version']);
+		const redirectionTarget = replaceUrl(details.url);
 
-	if (redirectionTarget !== details.url) {
-		const response = await fetch(redirectionTarget, { method: 'HEAD' });
-		if (response.ok && !response.redirected) {
-		  return { redirectUrl: redirectionTarget };
+		if (redirectionTarget !== details.url) {
+			const response = await fetch(redirectionTarget, { method: 'HEAD' });
+			if (response.ok && !response.redirected) {
+			  return { redirectUrl: redirectionTarget };
+			}
 		}
-	}
-	return {};
-}, { urls: ['*://docs.oracle.com/*'], types: ['main_frame', 'sub_frame'] }, ['blocking']);
+		return {};
+	},
+	{
+		urls: ['*://docs.oracle.com/*'],
+		types: ['main_frame', 'sub_frame']
+	},
+	['blocking']
+);
