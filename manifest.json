@@ -25,5 +25,9 @@
     "gecko": {
       "id": "{b75af37b-574d-4746-ac34-629fa349cf81}"
     }
-  }
+  },
+  "web_accessible_resources": [
+    "json/modules.json",
+    "json/modules-v11.json"
+  ]
 }
