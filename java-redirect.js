@@ -24,7 +24,7 @@ const getReplaceAlgorithm = async version => {
 browser.webRequest.onBeforeRequest.addListener(
 	async details => {
 		// Only redirect HTML
-		if (!details.url.matches(/\.html(?:#.*)?$/)) {
+		if (!details.url.match(/\.html(?:#.*)?$/)) {
 			return {};
 		}
 		const result = await browser.storage.sync.get();
