@@ -27,6 +27,7 @@
   "web_accessible_resources": [
     {
       "resources": [
+        "json/modules-v10.json",
         "json/modules-v11.json",
         "json/modules-v12.json",
         "json/modules-v13.json",
