@@ -176,6 +176,10 @@
     "module":"java.base"
   },
   {
+    "package":"java.lang.constant",
+    "module":"java.base"
+  },
+  {
     "package":"java.lang.instrument",
     "module":"java.instrument"
   },
@@ -485,6 +489,10 @@
   },
   {
     "package":"javax.naming.ldap",
+    "module":"java.naming"
+  },
+  {
+    "package":"javax.naming.ldap.spi",
     "module":"java.naming"
   },
   {

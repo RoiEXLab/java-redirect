@@ -1,8 +1,7 @@
 {
-  "manifest_version": 2,
-
+  "manifest_version": 3,
   "name": "Java-Redirector",
-  "version": "5.1",
+  "version": "6.0",
   "description": "Redirects your Browser to the newest version of the javadocs",
   "icons": {
     "48": "icons/java-redirect-48.png"
@@ -11,23 +10,36 @@
   "permissions": [
     "webRequest",
     "webRequestBlocking",
-    "*://docs.oracle.com/*",
     "storage"
   ],
+  "host_permissions": ["*://docs.oracle.com/*"],
   "background": {
     "scripts": ["java-redirect.js"]
   },
   "options_ui": {
-    "page": "settings.html",
-    "browser_style": true
+    "page": "settings.html"
   },
-  "applications": {
+  "browser_specific_settings": {
     "gecko": {
       "id": "{b75af37b-574d-4746-ac34-629fa349cf81}"
     }
   },
   "web_accessible_resources": [
-    "json/modules.json",
-    "json/modules-v11.json"
+    {
+      "resources": [
+        "json/modules-v11.json",
+        "json/modules-v12.json",
+        "json/modules-v13.json",
+        "json/modules-v14.json",
+        "json/modules-v15.json",
+        "json/modules-v16.json",
+        "json/modules-v17.json",
+        "json/modules-v18.json",
+        "json/modules-v19.json",
+        "json/modules-v20.json",
+        "json/modules-v21.json"
+      ],
+      "matches": ["*://docs.oracle.com/*"]
+    }
   ]
 }

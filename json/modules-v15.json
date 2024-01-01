@@ -8,10 +8,6 @@
     "module":"jdk.accessibility"
   },
   {
-    "package":"com.sun.javadoc",
-    "module":"jdk.javadoc"
-  },
-  {
     "package":"com.sun.jdi",
     "module":"jdk.jdi"
   },
@@ -90,10 +86,6 @@
   {
     "package":"com.sun.tools.javac",
     "module":"jdk.compiler"
-  },
-  {
-    "package":"com.sun.tools.javadoc",
-    "module":"jdk.javadoc"
   },
   {
     "package":"com.sun.tools.jconsole",
@@ -176,6 +168,10 @@
     "module":"java.base"
   },
   {
+    "package":"java.lang.constant",
+    "module":"java.base"
+  },
+  {
     "package":"java.lang.instrument",
     "module":"java.instrument"
   },
@@ -197,6 +193,10 @@
   },
   {
     "package":"java.lang.reflect",
+    "module":"java.base"
+  },
+  {
+    "package":"java.lang.runtime",
     "module":"java.base"
   },
   {
@@ -269,10 +269,6 @@
   },
   {
     "package":"java.security",
-    "module":"java.base"
-  },
-  {
-    "package":"java.security.acl",
     "module":"java.base"
   },
   {
@@ -485,6 +481,10 @@
   },
   {
     "package":"javax.naming.ldap",
+    "module":"java.naming"
+  },
+  {
+    "package":"javax.naming.ldap.spi",
     "module":"java.naming"
   },
   {
@@ -776,6 +776,10 @@
     "module":"jdk.dynalink"
   },
   {
+    "package":"jdk.incubator.foreign",
+    "module":"jdk.incubator.foreign"
+  },
+  {
     "package":"jdk.javadoc.doclet",
     "module":"jdk.javadoc"
   },
@@ -808,20 +812,16 @@
     "module":"jdk.management.jfr"
   },
   {
-    "package":"jdk.nashorn.api.scripting",
-    "module":"jdk.scripting.nashorn"
-  },
-  {
-    "package":"jdk.nashorn.api.tree",
-    "module":"jdk.scripting.nashorn"
-  },
-  {
     "package":"jdk.net",
     "module":"jdk.net"
   },
   {
     "package":"jdk.nio",
     "module":"jdk.net"
+  },
+  {
+    "package":"jdk.nio.mapmode",
+    "module":"jdk.nio.mapmode"
   },
   {
     "package":"jdk.security.jarsigner",

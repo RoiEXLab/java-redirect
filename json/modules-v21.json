@@ -1,15 +1,7 @@
 [
   {
-    "package":"com.sun.jarsigner",
-    "module":"jdk.jartool"
-  },
-  {
     "package":"com.sun.java.accessibility.util",
     "module":"jdk.accessibility"
-  },
-  {
-    "package":"com.sun.javadoc",
-    "module":"jdk.javadoc"
   },
   {
     "package":"com.sun.jdi",
@@ -92,10 +84,6 @@
     "module":"jdk.compiler"
   },
   {
-    "package":"com.sun.tools.javadoc",
-    "module":"jdk.javadoc"
-  },
-  {
     "package":"com.sun.tools.jconsole",
     "module":"jdk.jconsole"
   },
@@ -176,6 +164,14 @@
     "module":"java.base"
   },
   {
+    "package":"java.lang.constant",
+    "module":"java.base"
+  },
+  {
+    "package":"java.lang.foreign",
+    "module":"java.base"
+  },
+  {
     "package":"java.lang.instrument",
     "module":"java.instrument"
   },
@@ -197,6 +193,10 @@
   },
   {
     "package":"java.lang.reflect",
+    "module":"java.base"
+  },
+  {
+    "package":"java.lang.runtime",
     "module":"java.base"
   },
   {
@@ -252,10 +252,6 @@
     "module":"java.rmi"
   },
   {
-    "package":"java.rmi.activation",
-    "module":"java.rmi"
-  },
-  {
     "package":"java.rmi.dgc",
     "module":"java.rmi"
   },
@@ -269,10 +265,6 @@
   },
   {
     "package":"java.security",
-    "module":"java.base"
-  },
-  {
-    "package":"java.security.acl",
     "module":"java.base"
   },
   {
@@ -350,6 +342,10 @@
   {
     "package":"java.util.prefs",
     "module":"java.prefs"
+  },
+  {
+    "package":"java.util.random",
+    "module":"java.base"
   },
   {
     "package":"java.util.regex",
@@ -485,6 +481,10 @@
   },
   {
     "package":"javax.naming.ldap",
+    "module":"java.naming"
+  },
+  {
+    "package":"javax.naming.ldap.spi",
     "module":"java.naming"
   },
   {
@@ -776,6 +776,10 @@
     "module":"jdk.dynalink"
   },
   {
+    "package":"jdk.incubator.vector",
+    "module":"jdk.incubator.vector"
+  },
+  {
     "package":"jdk.javadoc.doclet",
     "module":"jdk.javadoc"
   },
@@ -808,20 +812,16 @@
     "module":"jdk.management.jfr"
   },
   {
-    "package":"jdk.nashorn.api.scripting",
-    "module":"jdk.scripting.nashorn"
-  },
-  {
-    "package":"jdk.nashorn.api.tree",
-    "module":"jdk.scripting.nashorn"
-  },
-  {
     "package":"jdk.net",
     "module":"jdk.net"
   },
   {
     "package":"jdk.nio",
     "module":"jdk.net"
+  },
+  {
+    "package":"jdk.nio.mapmode",
+    "module":"jdk.nio.mapmode"
   },
   {
     "package":"jdk.security.jarsigner",
